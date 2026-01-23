@@ -495,8 +495,8 @@ footer {
         display: block;
     }
 
-    .nav-links.active {
-        display: flex;
+    .nav-links {
+        display: none;
         flex-direction: column;
         position: absolute;
         top: 100%;
@@ -505,6 +505,60 @@ footer {
         background: var(--white);
         padding: 30px;
         box-shadow: var(--shadow);
+        gap: 25px;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .lang-switcher {
+        margin: 0 auto 10px;
+        width: fit-content;
+    }
+
+    .hero-container,
+    .split-container,
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero-image img {
+        max-width: 320px;
+    }
+
+    .app-badges {
+        justify-content: center;
+    }
+
+    .stats-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stats {
+        padding: 60px 0;
+    }
+
+    .footer-about p {
+        margin: 20px auto;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
     }
 
     .step-container {
