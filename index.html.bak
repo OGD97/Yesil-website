@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yeşil Yemek | Gıda İsrafını Önle, Geleceği Kurtar</title>
+    <meta name="description" content="Yeşil Yemek ile restoranların ve marketlerin ihtiyaç fazlası lezzetli yemeklerini uygun fiyata satın alarak gıda israfını önlemeye yardımcı olun.">
+    
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <img src="yesil.png" alt="Yeşil Yemek Logo">
+                <span>Yeşil Yemek</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <div class="lang-switcher">
+                    <button class="lang-btn active" onclick="setLang('tr')">TR</button>
+                    <button class="lang-btn" onclick="setLang('en')">EN</button>
+                </div>
+                <a href="#nasil-calisir">
+                    <span class="tr">Nasıl Çalışır?</span>
+                    <span class="en">How It Works</span>
+                </a>
+                <a href="#ozellikler">
+                    <span class="tr">Özellikler</span>
+                    <span class="en">Features</span>
+                </a>
+                <a href="#is-ortaklari">
+                    <span class="tr">İş Ortakları</span>
+                    <span class="en">Partners</span>
+                </a>
+
+                <a href="/restaurants">
+                    <span class="en">Restaurants</span>
+                    <span class="tr">Restoranlar</span>
+                </a>
+                
+                <a href="https://apps.apple.com/tr/app/ye%C5%9Fil-yemek/id6749231579?l=tr" class="btn-cta">
+                    <span class="tr">Hemen İndir</span>
+                    <span class="en">Download Now</span>
+                </a>
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="tr">Gıda İsrafını <span>Lezzete</span> Dönüştürün</h1>
+                <h1 class="en">Turn Food Waste Into <span>Flavor</span></h1>
+                
+                <p class="tr">Favori mekanlarınızın günlük taze ve lezzetli ürünlerini %70'e varan indirimlerle kurtarın. Hem doğayı koruyun hem de bütçenizi.</p>
+                <p class="en">Rescue fresh and delicious daily products from your favorite venues with discounts up to 70%. Save the planet and your budget.</p>
+                
+                <div class="app-badges">
+                    <a href="https://apps.apple.com/tr/app/ye%C5%9Fil-yemek/id6749231579?l=tr" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="App Store">
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.muhammethuseyin.newfoodapp" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="app_mockup_hero.png" alt="Yeşil Yemek Application">
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="stats-container">
+            <div class="stat-item reveal">
+                <h3>5K+</h3>
+                <p class="tr">Kurtarılan Öğün</p>
+                <p class="en">Meals Rescued</p>
+            </div>
+            <div class="stat-item reveal">
+                <h3>12T</h3>
+                <p class="tr">CO2 Salınımı Engellendi</p>
+                <p class="en">CO2 Emissions Prevented</p>
+            </div>
+            <div class="stat-item reveal">
+                <h3>200+</h3>
+                <p class="tr">Partner İşletme</p>
+                <p class="en">Partner Businesses</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="ozellikler" class="features">
+        <div class="section-head reveal">
+            <h2 class="tr">Neden Yeşil Yemek?</h2>
+            <h2 class="en">Why Yeşil Yemek?</h2>
+            <p class="tr">Sürdürülebilir bir gelecek için teknolojiyi kullanıyoruz.</p>
+            <p class="en">We use technology for a sustainable future.</p>
+        </div>
+        <div class="feature-grid">
+            <div class="feature-card reveal">
+                <div class="icon-box"><i class="fas fa-box-open"></i></div>
+                <h3 class="tr">Sürpriz Kutular</h3>
+                <h3 class="en">Surprise Bags</h3>
+                <p class="tr">İşletmelerin o günkü taze ürünlerinden oluşan sürpriz kutuları uygun fiyata satın alın.</p>
+                <p class="en">Buy surprise bags consisting of the day's fresh products from businesses at affordable prices.</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="icon-box"><i class="fas fa-leaf"></i></div>
+                <h3 class="tr">Çevreci Etki</h3>
+                <h3 class="en">Eco Impact</h3>
+                <p class="tr">Her kurtarılan öğün ile gıda israfını azaltın ve karbon ayak izinizi küçültün.</p>
+                <p class="en">Each rescued meal reduces food waste and shrinks your carbon footprint.</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="icon-box"><i class="fas fa-percentage"></i></div>
+                <h3 class="tr">Akıllı Tasarruf</h3>
+                <h3 class="en">Smart Savings</h3>
+                <p class="tr">Kaliteli yemeğe erişirken bütçenizi koruyun, %50'den fazla tasarruf edin.</p>
+                <p class="en">Protect your budget while accessing quality food, save more than 50%.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="nasil-calisir" class="features" style="background: var(--bg-light);">
+        <div class="section-head reveal">
+            <h2 class="tr">3 Adımda Dünyayı Kurtarın</h2>
+            <h2 class="en">Save the World in 3 Steps</h2>
+            <p class="tr">Yeşil Yemek ile gıda kurtarmak çok kolay.</p>
+            <p class="en">Saving food with Yeşil Yemek is so easy.</p>
+        </div>
+        <div class="step-container">
+            <div class="step-item reveal">
+                <div class="step-number">1</div>
+                <h3 class="tr">Keşfet</h3>
+                <h3 class="en">Discover</h3>
+                <p class="tr">Uygulamayı açın ve yakınınızdaki restoranların sürpriz kutularına göz atın.</p>
+                <p class="en">Open the app and browse through surprise bags from nearby restaurants.</p>
+            </div>
+            <div class="step-item reveal">
+                <div class="step-number">2</div>
+                <h3 class="tr">Sipariş Ver</h3>
+                <h3 class="en">Reserve</h3>
+                <p class="tr">En sevdiğiniz lezzetleri uygun fiyata uygulama üzerinden rezerve edin.</p>
+                <p class="en">Reserve your favorite flavors at affordable prices through the app.</p>
+            </div>
+            <div class="step-item reveal">
+                <div class="step-number">3</div>
+                <h3 class="tr">Teslim Al</h3>
+                <h3 class="en">Collect</h3>
+                <p class="tr">Belirlenen saatte işletmeye gidin ve taze ürünlerinizi teslim alın.</p>
+                <p class="en">Go to the business at the set time and collect your fresh products.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="is-ortaklari" class="split-section" style="background: #fff;">
+        <div class="split-container">
+            <div class="split-content reveal">
+                <h2 class="tr">İşletmeler İçin Yeşil Yemek</h2>
+                <h2 class="en">Yeşil Yemek for Businesses</h2>
+                <p class="tr">Ürünlerinizi israf etmeyin, yeni müşteriler kazanın ve ek gelir elde edin.</p>
+                <p class="en">Don't waste your products, gain new customers, and generate extra income.</p>
+                <ul class="split-list">
+                    <li><i class="fas fa-store"></i> 
+                        <span class="tr">Stok yönetimini optimize edin</span>
+                        <span class="en">Optimize stock management</span>
+                    </li>
+                    <li><i class="fas fa-users"></i> 
+                        <span class="tr">Marka bilinirliğinizi artırın</span>
+                        <span class="en">Increase brand awareness</span>
+                    </li>
+                    <li><i class="fas fa-chart-line"></i> 
+                        <span class="tr">Sürdürülebilirlik hedeflerinize ulaşın</span>
+                        <span class="en">Reach your sustainability goals</span>
+                    </li>
+                </ul>
+                <a href="#contact" class="btn-cta" style="display:inline-block; margin-top: 20px;">
+                    <span class="tr">Partnerimiz Olun</span>
+                    <span class="en">Become a Partner</span>
+                </a>
+            </div>
+            <div class="split-image reveal">
+                <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&q=80&w=1000" alt="Restaurant Partner">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <a href="#" class="logo" style="color:#fff">
+                    <img src="yesil.png" alt="Logo">
+                    <span>Yeşil Yemek</span>
+                </a>
+                <p class="tr">Gıda israfıyla mücadele eden, sürdürülebilir bir gelecek inşa eden teknoloji girişimi.</p>
+                <p class="en">A technology startup fighting food waste and building a sustainable future.</p>
+            </div>
+            <div class="footer-links">
+                <h4 class="tr">Kurumsal</h4>
+                <h4 class="en">Corporate</h4>
+                <ul>
+                    <li><a href="#"><span class="tr">Hakkımızda</span><span class="en">About Us</span></a></li>
+                    <li><a href="#"><span class="tr">Kariyer</span><span class="en">Careers</span></a></li>
+                    <li><a href="#"><span class="tr">Basın</span><span class="en">Press</span></a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4 class="tr">Destek</h4>
+                <h4 class="en">Support</h4>
+                <ul>
+                    <li><a href="#"><span class="tr">Yardım Merkezi</span><span class="en">Help Center</span></a></li>
+                    <li><a href="#"><span class="tr">Bize Ulaşın</span><span class="en">Contact Us</span></a></li>
+                    <li><a href="#"><span class="tr">Sıkça Sorulan Sorular</span><span class="en">FAQ</span></a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4 class="tr">Yasal</h4>
+                <h4 class="en">Legal</h4>
+                <ul>
+                    <li><a href="#"><span class="tr">Kullanım Koşulları</span><span class="en">Terms of Use</span></a></li>
+                    <li><a href="#"><span class="tr">Gizlilik Politikası</span><span class="en">Privacy Policy</span></a></li>
+                    <li><a href="#"><span class="tr">KVKK Aydınlatma Metni</span><span class="en">Data Protection</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Yeşil Yemek. <span class="tr">Tüm hakları saklıdır.</span><span class="en">All rights reserved.</span></p>
+            <div class="socials">
+                <a href="#" style="color:#fff; margin-left: 15px;"><i class="fab fa-instagram"></i></a>
+                <a href="#" style="color:#fff; margin-left: 15px;"><i class="fab fa-twitter"></i></a>
+                <a href="#" style="color:#fff; margin-left: 15px;"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Language Toggle Logic
+        function setLang(lang) {
+            document.documentElement.setAttribute('lang', lang);
+            
+            // Update buttons
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if(btn.innerText.toLowerCase() === lang) btn.classList.add('active');
+            });
+            
+            localStorage.setItem('preferredLang', lang);
+        }
+
+        // Initialize Language
+        const savedLang = localStorage.getItem('preferredLang') || 'tr';
+        setLang(savedLang);
+
+        // Mobile Menu Toggle
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+
+        // Scroll Effect for Navbar
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        // Intersection Observer for Reveal animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
