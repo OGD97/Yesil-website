@@ -172,7 +172,7 @@ h6 {
     align-items: center;
 }
 
-.nav-links a {
+.nav-links a:not(.btn-cta) {
     text-decoration: none;
     color: var(--text-header);
     font-weight: 600;
@@ -181,7 +181,7 @@ h6 {
     transition: var(--transition);
 }
 
-.nav-links a::after {
+.nav-links a:not(.btn-cta)::after {
     content: '';
     position: absolute;
     bottom: -6px;
@@ -197,7 +197,7 @@ h6 {
     color: var(--primary-light);
 }
 
-.nav-links a:hover::after {
+.nav-links a:not(.btn-cta):hover::after {
     width: 100%;
 }
 
@@ -632,6 +632,7 @@ h6 {
 .partner-list i {
     width: 32px;
     height: 32px;
+    flex-shrink: 0;
     background: var(--accent-vibrant);
     border-radius: 50%;
     display: flex;
@@ -840,7 +841,7 @@ footer {
     transform: translateX(0);
 }
 
-.mobile-nav a {
+.mobile-nav a:not(.btn-cta) {
     font-size: 1.8rem;
     font-weight: 800;
     text-decoration: none;
