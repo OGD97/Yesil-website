@@ -1043,3 +1043,19 @@ footer {
     cursor: pointer;
     color: var(--text-inverse);
 }
+
+.mobile-lang {
+    background: rgba(255, 255, 255, 0.1);
+    margin-top: 20px;
+}
+
+.mobile-lang .lang-btn {
+    color: var(--white);
+    opacity: 0.6;
+}
+
+.mobile-lang .lang-btn.active {
+    background: var(--white);
+    color: var(--primary);
+    opacity: 1;
+}
